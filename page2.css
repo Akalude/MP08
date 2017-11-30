@@ -1,0 +1,23 @@
+#header {
+  border: 1px solid black;
+}
+
+#sidebar-left {
+  border: 1px solid red;
+  float: left;
+}
+
+#content {
+  border: 1px solid blue;
+  padding: 2px;
+}
+
+#sidebar-right {
+  border: 1px solid green;
+  padding: 2px;
+}
+
+#footer {
+  border: 1px dashed gray;
+  padding: 2px;
+}
