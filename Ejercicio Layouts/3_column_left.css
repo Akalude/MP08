@@ -1,0 +1,9 @@
+* {box-sizing: border-box;}
+html,body { height: 100vh;}
+#header {border: thin solid red; height: 15%; }
+#content { border: thin solid blue; height: 70%; }
+#content-left {border: thin solid yellow; float: left;width: 60%; height:100%;}
+#content-left2 {border: thin solid brown; float: left;width: 20%; height:100%;}
+#content-right {border: thin solid purple; float: left;width: 20%;height: 100%;}
+#footer {border: thin solid green; height: 15%; }
+.clearfix{ clear: both;}

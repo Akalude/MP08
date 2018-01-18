@@ -1,0 +1,5 @@
+* {box-sizing: border-box;}
+html,body { height: 100vh;}
+#header {border: thin solid red; height: 15%; }
+#content { border: thin solid blue; height: 70%; }
+#footer {border: thin solid green; height: 15%; }

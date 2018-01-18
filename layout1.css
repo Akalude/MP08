@@ -1,0 +1,6 @@
+#right {border: 1px solid green; float: right; width: 49%;  }
+#left {border: 1px solid black; float: left; width: 49%; }
+#post1 {border: 2px solid red; float: left;width: 49%;}
+#post2 {border: 2px solid blue; float: right; width: 49%;}
+.img {width: 150px}
+.clearfix {clear:both}
