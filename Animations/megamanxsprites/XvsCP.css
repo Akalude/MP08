@@ -1,0 +1,194 @@
+.Xaparicion {
+  width: 181px;
+  height: 202px;
+  background: url("Apparition.png");
+  animation: up2down 0.5s forwards, aparicion 0.5s steps(7)  0.4s forwards, dissappear 0s linear 2.3s infinite forwards;
+  position: absolute;
+  left: 150px;
+
+}
+
+.cpinicio {
+  width: 181px;
+  height: 202px;
+  background: url("cpinicio.png");
+  animation: aparicion2 0.8s steps(5)  1s forwards, dissappear 0s linear 2.8s infinite forwards;
+  position: absolute;
+  top: 720px;
+  left: 1500px;
+
+}
+
+.xattack1 {
+  width: 155px;
+  height: 173px;
+  background: url("xattack.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 2.3s infinite forwards,attack1 2s linear 0.5s 1 backwards, dissappear 0s linear 5s infinite forwards;
+  position: absolute;
+  left: 174px;
+  top: 727px;
+
+}
+
+.bullet1 {
+  width: 80px;
+  height: 77px;
+  background: url("bullet.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 2.5s 1 forwards, bullet1 0.3s linear 2.65s 4 backwards, dissappear 0s linear 3.8s infinite forwards;
+  position: absolute;
+  left: 325px;
+  top: 770px;
+
+}
+
+.cpjumpleft1 {
+  width: 181px;
+  height: 202px;
+  background: url("cpjumpleft.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 2.8s 1 forwards,cpjumpleft1up 0.7s linear 2.7s 1 forwards,cpjumpleft1down 1s linear 3.4s 1 forwards, dissappear 0s linear 4.3s infinite forwards;
+  position: absolute;
+  left: 1500px;
+  top: 720px;
+
+}
+
+.cpattack1{
+  width: 181px;
+  height: 202px;
+  background: url("cpattack1.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 4.3s 1 forwards,cpattack1 0.5s steps(4) 4s 1 forwards,  dissappear 0s linear 4.5s infinite forwards;
+  position: absolute;
+  left: 900px;
+  top: 720px;
+}
+
+.cpattack2left{
+  width: 181px;
+  height: 202px;
+  background: url("cpattack2left.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 4.5s 1 forwards,cpattack2left 1s linear 4.5s 1 forwards, dissappear 0s linear 5.5s infinite forwards;
+  position: absolute;
+  left: 900px;
+  top: 720px;
+}
+
+.cpattack2right{
+  width: 181px;
+  height: 202px;
+  background: url("cpattack2right.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 5.5s 1 forwards,cpattack2right 1.5s linear 5.5s 1 forwards,  dissappear 0s linear 7s infinite forwards;
+  position: absolute;
+  left: 900px;
+  top: 720px;
+}
+
+.cpattack2left2{
+  width: 181px;
+  height: 202px;
+  background: url("cpattack2left.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 7s 1 forwards,cpattack2left2 1.6s linear 7s 1 forwards;
+  position: absolute;
+  left: 900px;
+  top: 720px;
+}
+
+
+.xjumpleft1{
+  width: 181px;
+  height: 264px;
+  background: url("xjumpleft1.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 5s 1 forwards, xjumpleft1 1s linear 4.5s 1 forwards, dissappear 0s linear 5.5s infinite forwards;
+  position: absolute;
+  left: 900px;
+  top: 720px;
+}
+
+.xwalldown1{
+  width: 181px;
+  height: 231px;
+  background: url("xwalldown1.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 5.5s 1 forwards, xwalldown1 1s linear 6s 1 forwards, dissappear 0s linear 7s infinite forwards;
+  position: absolute;
+  left: 65px;
+  top: 450px;
+}
+
+@keyframes appear {
+  from { opacity: 0; visibility: hidden; }
+  to { opacity: 1; visibility: visible; }
+}
+
+@keyframes dissappear {
+  from { opacity: 1; visibility: visible; }
+  to { opacity: 0; visibility: hidden; }
+}
+
+
+@keyframes up2down {
+  from { margin-top: 10px;}
+  to { margin-top: 690px; }
+}
+
+@keyframes aparicion{
+  100% {background-position: -1267px;}
+}
+
+@keyframes aparicion2{
+  100% {background-position: -905px;}
+}
+
+@keyframes attack1{
+  100% {background-position: 0px;}
+
+}
+
+@keyframes bullet1{
+  from { left: 325px;}
+  to { left: 1800px;}
+
+}
+
+@keyframes cpjumpleft1up{
+  from { left: 1500px; top: 720px;}
+  to { left: 1200px; top: 300px; }
+
+}
+
+@keyframes cpjumpleft1down{
+  from { left: 1200px; top: 300px;}
+  to { left: 900px; top: 720px; }
+
+}
+
+@keyframes cpattack1{
+  100% {background-position: -724px;}
+}
+
+@keyframes cpattack2left{
+  from { left: 900px; top: 720px;}
+  to { left: 100px; top: 720px; }
+}
+
+@keyframes cpattack2right{
+  from { left: 100px; top: 720px;}
+  to { left: 1550px; top: 720px; }
+}
+
+@keyframes cpattack2left2{
+  from { left: 1550px; top: 720px;}
+  to { left: 1100px; top: 720px; }
+}
+
+@keyframes xjumpleft1{
+  from { left: 174px; top: 727px;}
+  to { left: 65px; top: 450px; }
+}
+
+@keyframes xwalldown1{
+  from { left: 65px; top: 450px;}
+  to { left: 65px; top: 700px; }
+}
+body{
+  background-image: url("Background.png");
+  background-repeat: no-repeat;
+}
