@@ -27,7 +27,6 @@
   position: absolute;
   left: 174px;
   top: 727px;
-
 }
 
 .bullet1 {
@@ -38,7 +37,6 @@
   position: absolute;
   left: 325px;
   top: 770px;
-
 }
 
 .cpjumpleft1 {
@@ -86,7 +84,7 @@
   width: 181px;
   height: 202px;
   background: url("cpattack2left.png");
-  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 7s 1 forwards,cpattack2left2 1.6s linear 7s 1 forwards;
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 7s 1 forwards,cpattack2left2 1.6s linear 7s 1 forwards, dissappear 0s linear 9s infinite forwards;
   position: absolute;
   left: 900px;
   top: 720px;
@@ -111,6 +109,56 @@
   position: absolute;
   left: 65px;
   top: 450px;
+}
+
+.xcharge1{
+  width: 167px;
+  height: 177px;
+  background: url("xcharge.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 7.1s 1 forwards, xcharge 0.3s steps(3) 7.1s 7 forwards, dissappear 0s linear 9.2s infinite forwards;
+  position: absolute;
+  left: 130px;
+  top: 730px;
+}
+
+.xattack2{
+  width: 155px;
+  height: 173px;
+  background: url("xattack.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 9.2s infinite forwards, attack1 2s linear 9.2s 1 backwards;
+  position: absolute;
+  left: 130px;
+  top: 730px;
+}
+
+.cpstay{
+  width: 181px;
+  height: 168px;
+  background: url("cpstay.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 9s 1 forwards,cpstay 1s linear 9s 1 backwards , dissappear 0s linear 9.7s infinite forwards;
+  position: absolute;
+  left: 1100px;
+  top: 720px;
+}
+
+.bullet2 {
+  width: 163px;
+  height: 101px;
+  background: url("bullet2.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 9.4s 1 forwards, bullet2 0.6s linear 9.4s 3 forwards, dissappear 0s linear 10s infinite forwards;
+  position: absolute;
+  left: 150px;
+  top: 770px;
+}
+
+.cpdie{
+  width: 181px;
+  height: 201px;
+  background: url("cpexplosion.png");
+  animation: dissappear 0s linear 0s infinite forwards, appear 0s linear 9.7s 1 forwards,cpexplosion 1s steps(10) 10s 4 forwards , dissappear 0s linear 14s infinite forwards;
+  position: absolute;
+  left: 1100px;
+  top: 720px;
 }
 
 @keyframes appear {
@@ -145,7 +193,6 @@
 @keyframes bullet1{
   from { left: 325px;}
   to { left: 1800px;}
-
 }
 
 @keyframes cpjumpleft1up{
@@ -186,8 +233,26 @@
 
 @keyframes xwalldown1{
   from { left: 65px; top: 450px;}
-  to { left: 65px; top: 700px; }
+  to { left: 55px; top: 700px; }
 }
+
+@keyframes xcharge{
+  100% {background-position: -501px;}
+}
+
+@keyframes cpstay{
+  100% {background-position: 0px;}
+}
+
+@keyframes bullet2{
+  from { left: 150px;}
+  to { left: 1800px;}
+}
+
+@keyframes cpexplosion{
+  100% {background-position: -1810px;}
+}
+
 body{
   background-image: url("Background.png");
   background-repeat: no-repeat;
