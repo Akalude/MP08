@@ -1,0 +1,5 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.clearfix { clear: both; }
+
+#tabla { text-align: center; width: 500px; height: 302px; border: thin solid black; margin-left: 20%; margin-top: 10%}
